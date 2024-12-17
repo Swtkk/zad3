@@ -17,7 +17,9 @@ public class TaskStorage {
         for (int i = 1; i <= 150; i++) {
             Task task = new Task();
             task.setName("Zadanie " + i);
-            task.setDone(i % 3 ==0);
+            task.setDone(i % 3 == 0);
+
+            task.setCategory(i % 2 == 0 ? Category.Studia : Category.Dom);
             tasks.add(task);
         }
         Log.d("TaskStorage", "Initialized " + tasks.size() + " tasks.");
@@ -31,6 +33,9 @@ public class TaskStorage {
         return tasks;
     }
 
+    public void addTask(Task task){
+        tasks.add(task);
+    }
     public Task getTask(UUID id) {
         for (Task task : tasks) {
             if (task.getId().equals(id)) {

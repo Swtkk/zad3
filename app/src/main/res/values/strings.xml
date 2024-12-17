@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">Todo</string>
-    <string name="name_label">Nazwa zadania</string>
-    <string name="name_hint">Nazwa</string>
-    <string name="done_label">Ukonczone</string>
+    <string name="app_name" translatable="false">Todo</string>
+    <string name="name_label" translatable="false">Nazwa zadania</string>
+    <string name="name_hint" translatable="false">Nazwa</string>
+    <string name="done_label" translatable="false">Ukonczone</string>
+    <string name="task_add_new" translatable="false">Nowe zadanie</string>
+    <string name="show_subtitle" translatable="false">Pokaz podtytul</string>
+    <string name="hide_subtitle" translatable="false">Ukryj podtytul</string>
+    <string name="subtitle_format">Zaległych zadań: %d</string>
+    <string name="task_name_hint">Wprowadz nazwe zadania</string>
+
+
 </resources>

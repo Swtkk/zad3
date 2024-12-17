@@ -8,10 +8,20 @@ public class Task {
     private String name;
     private Date date;
     private boolean done;
+    Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     public Task() {
         id = UUID.randomUUID();
         date = new Date();
+        category = Category.Dom;
     }
 
     public void setId(UUID id) {

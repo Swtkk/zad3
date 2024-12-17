@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="task_name_hint">Set task name</string>
+    <string name="subtitle_format" translatable="false">Left: %d</string>
+</resources>

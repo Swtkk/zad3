@@ -1,5 +1,5 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -9,19 +9,28 @@
         android:id="@+id/task_item_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="Task Name" />
+        android:text="Task Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/task_item_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="Task Date" />
+        android:text="Task Date"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/task_category_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        tools:srcCompat="@drawable/ic_action_name" />
 
 <!--    <CheckBox-->
 <!--        android:id="@+id/task_done_checkbox"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
+<!--        android:focusable="false"-->
 <!--        android:text="Ukończone" />-->
 </LinearLayout>
